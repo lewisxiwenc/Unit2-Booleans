@@ -113,7 +113,6 @@ console.log(fizzBuzz(7));  // "7"
 //   weight <= 5  -> 8
 //   weight > 5   -> 12
 function getShippingCost(weight, isMember) {
-  // TODO: your code here (nested conditional — check isMember first, then weight)
   if (isMember === true) {
     if (weight <= 5) {
       return("0")
