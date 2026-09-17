@@ -53,7 +53,7 @@ function getLetterGrade(score) {
   } else if (score >= 0 && score <= 100) {
     return "F";
   } else {
-    return "Invalid Grade";
+    return "Invalid score";
   }
 }
 
