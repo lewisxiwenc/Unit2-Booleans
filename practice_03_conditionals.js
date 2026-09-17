@@ -69,10 +69,14 @@ console.log(getLetterGrade(150)); // "Invalid score"
 //   - password contains at least one number  (hint: /[0-9]/.test(password))
 //   - password is not exactly "password" (case-sensitive)
 function isValidPassword(password) {
-  if(password.length >= 8 && /[0-9]/.test(password) && !password.includes("password")) {
-    return("true")
+  if (
+    password.length >= 8 &&
+    /[0-9]/.test(password) &&
+    !password.includes("password")
+  ) {
+    return "true";
   } else {
-    return("false")
+    return "false";
   }
 }
 
@@ -89,20 +93,20 @@ console.log(isValidPassword("nonumbershere")); // false
 //   otherwise, num converted to a string
 function fizzBuzz(num) {
   if (num % 3 === 0 && num % 5 === 0) {
-    return("FizzBuzz")
+    return "FizzBuzz";
   } else if (num % 5 === 0) {
-    return("Buzz")
+    return "Buzz";
   } else if (num % 3 === 0) {
-    return("Fizz")
+    return "Fizz";
   } else {
-    return(num)
+    return num;
   }
 }
 
-console.log(fizzBuzz(3));  // "Fizz"
-console.log(fizzBuzz(5));  // "Buzz"
+console.log(fizzBuzz(3)); // "Fizz"
+console.log(fizzBuzz(5)); // "Buzz"
 console.log(fizzBuzz(15)); // "FizzBuzz"
-console.log(fizzBuzz(7));  // "7"
+console.log(fizzBuzz(7)); // "7"
 
 // ---------- Problem 5: Shipping Cost Calculator ----------
 // If isMember is true:
@@ -115,33 +119,32 @@ console.log(fizzBuzz(7));  // "7"
 function getShippingCost(weight, isMember) {
   if (isMember === true) {
     if (weight <= 5) {
-      return("0")
+      return "0";
     } else if (weight > 5) {
-      return("3")
+      return "3";
     }
   } else if (isMember === false) {
     if (weight <= 1) {
-      return("5")
+      return "5";
     } else if (weight <= 5) {
-      return("8")
+      return "8";
     } else if (weight > 5) {
-      return("12")
+      return "12";
     }
   }
 }
 
-console.log(getShippingCost(3, true));    // 0
-console.log(getShippingCost(8, true));    // 3
+console.log(getShippingCost(3, true)); // 0
+console.log(getShippingCost(8, true)); // 3
 console.log(getShippingCost(0.5, false)); // 5
-console.log(getShippingCost(4, false));   // 8
-console.log(getShippingCost(10, false));  // 12
+console.log(getShippingCost(4, false)); // 8
+console.log(getShippingCost(10, false)); // 12
 
 // ---------- Stretch (optional) ----------
 // Rewrite the even/odd check from Problem 1 using the ternary operator
 // instead of if / else.
 function isEvenTernary(num) {
-  // TODO: your code here
-  const even = num % 2 === 0 ? "True" : "False"
+  const even = num % 2 === 0 ? "True" : "False";
   return even;
 }
 
