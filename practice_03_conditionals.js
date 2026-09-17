@@ -136,13 +136,14 @@ console.log(getShippingCost(0.5, false)); // 5
 console.log(getShippingCost(4, false));   // 8
 console.log(getShippingCost(10, false));  // 12
 
-// // ---------- Stretch (optional) ----------
-// // Rewrite the even/odd check from Problem 1 using the ternary operator
-// // instead of if / else.
-// function isEvenTernary(num) {
-//   // TODO: your code here
+// ---------- Stretch (optional) ----------
+// Rewrite the even/odd check from Problem 1 using the ternary operator
+// instead of if / else.
+function isEvenTernary(num) {
+  // TODO: your code here
+  const even = num % 2 === 0 ? "True" : "False"
+  return even;
+}
 
-// }
-
-// console.log(isEvenTernary(4)); // true
-// console.log(isEvenTernary(7)); // false
+console.log(isEvenTernary(4)); // true
+console.log(isEvenTernary(7)); // false
